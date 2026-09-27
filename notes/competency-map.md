@@ -29,6 +29,10 @@ This is not a fixed curriculum. It will evolve as new courses, projects, papers,
 | Identify relevant variables and parameters | In progress |
 | Choose the appropriate modeling scale | In progress |
 | Distinguish microscopic, mesoscopic, and macroscopic descriptions | In progress |
+| Decide whether space and/or time are required by the model | In progress |
+| Choose between continuous, time-step, and event-driven time representations | In progress |
+| Distinguish Eulerian and Lagrangian spatial descriptions | In progress |
+| Recognize when interactions should be represented by a graph/network | In progress |
 | State assumptions explicitly | In progress |
 | Recognize that one phenomenon can admit several valid models | In progress |
 | Identify interactions, mechanisms, and conservation principles | In progress |
@@ -107,6 +111,8 @@ Status: **Planned**
 | Competency | Status |
 |---|---|
 | Discretize space and time | In progress |
+| Understand the role of spatial meshes/grids | In progress |
+| Understand the role of the time step Delta_t | In progress |
 | Understand truncation and approximation errors | Planned |
 | Measure numerical accuracy | Planned |
 | Understand consistency | Planned |
@@ -151,7 +157,7 @@ Status: **Planned**
 - Lattice-gas models
 - Discrete-event simulation
 
-Status: **Planned**
+Status: **Discrete-event simulation introduced; others planned**
 
 ### Particle and many-body methods
 
@@ -160,7 +166,7 @@ Status: **Planned**
 - N-body simulation
 - Barnes-Hut and tree methods
 
-Status: **Planned**
+Status: **Lagrangian viewpoint introduced; methods planned**
 
 ### Mesoscopic fluid methods
 
@@ -179,6 +185,17 @@ Status: **Planned**
 - Multi-agent systems
 
 Status: **Planned**
+
+### Graphs and complex networks
+
+- Nodes and edges as model components and interactions
+- Dynamic networks
+- Degree and degree distributions
+- Clustering
+- Centrality
+- Network topology and dynamics
+
+Status: **Introduced**
 
 ---
 
@@ -415,7 +432,7 @@ The repository should therefore show not only **what was studied**, but also **w
 
 Current study focus:
 
-**Scientific modeling fundamentals**
+**Scientific modeling fundamentals — representation of space and time**
 
 Topics currently being developed:
 
@@ -424,7 +441,11 @@ Topics currently being developed:
 - modeling scale;
 - model versus simulation;
 - numerical experiment;
-- discretization;
+- continuous versus discretized time;
+- event-driven time;
+- Eulerian versus Lagrangian descriptions;
+- spatial meshes and grids;
+- graph/network representations of interactions;
 - verification and validation;
 - computational science as an interdisciplinary field.
 
