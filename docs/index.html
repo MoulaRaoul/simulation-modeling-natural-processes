@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flashcards for simulation, modeling and computational science study.">
+  <title>Computational Science Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Simulation & Modeling of Natural Processes</p>
+        <h1>Flashcards</h1>
+        <p class="subtitle">Réviser les notions au fur et à mesure de la formation.</p>
+      </div>
+      <button id="resetProgress" class="ghost-button" type="button">Réinitialiser la progression</button>
+    </header>
+
+    <section class="controls" aria-label="Filtres">
+      <label>
+        Module
+        <select id="moduleFilter"></select>
+      </label>
+      <label>
+        Leçon
+        <select id="lessonFilter"></select>
+      </label>
+      <label>
+        Révision
+        <select id="statusFilter">
+          <option value="all">Toutes les cartes</option>
+          <option value="review">À revoir</option>
+          <option value="mastered">Acquises</option>
+          <option value="unseen">Non évaluées</option>
+        </select>
+      </label>
+      <button id="shuffleButton" class="secondary-button" type="button">Mélanger</button>
+    </section>
+
+    <section class="stats" aria-label="Progression">
+      <div><strong id="visibleCount">0</strong><span>cartes</span></div>
+      <div><strong id="masteredCount">0</strong><span>acquises</span></div>
+      <div><strong id="reviewCount">0</strong><span>à revoir</span></div>
+    </section>
+
+    <section class="study-area" aria-live="polite">
+      <p id="emptyState" class="empty-state" hidden>Aucune carte ne correspond à ces filtres.</p>
+
+      <article id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Retourner la carte">
+        <div class="card-meta">
+          <span id="cardModule"></span>
+          <span id="cardLesson"></span>
+        </div>
+        <span id="cardSide" class="side-pill">Question</span>
+        <div id="cardContent" class="card-content"></div>
+        <span class="flip-hint">Cliquer ou appuyer sur Espace pour retourner</span>
+      </article>
+
+      <div class="rating-row">
+        <button id="reviewButton" class="review-button" type="button">À revoir</button>
+        <button id="masteredButton" class="mastered-button" type="button">Acquis</button>
+      </div>
+
+      <nav class="navigation" aria-label="Navigation entre les cartes">
+        <button id="previousButton" class="nav-button" type="button" aria-label="Carte précédente">←</button>
+        <span id="positionLabel">0 / 0</span>
+        <button id="nextButton" class="nav-button" type="button" aria-label="Carte suivante">→</button>
+      </nav>
+    </section>
+
+    <footer>
+      <p>Raccourcis : Espace = retourner · ←/→ = naviguer · 1 = à revoir · 2 = acquis</p>
+    </footer>
+  </main>
+
+  <script src="cards.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
