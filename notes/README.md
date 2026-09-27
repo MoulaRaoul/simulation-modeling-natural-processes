@@ -39,5 +39,6 @@ Not every section is required from the beginning. Notes grow as the correspondin
 ## Current notes
 
 - [Modeling Fundamentals](modeling-fundamentals.md)
+- [Modeling Space and Time](space-and-time-modeling.md)
 
 More notes will be created progressively when new competencies emerge.
