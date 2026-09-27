@@ -76,3 +76,14 @@ This repository contains personal notes, original implementations, and independe
 ## Status
 
 Study in progress.
+
+## Study flashcards
+
+A lightweight flashcard application is maintained in `docs/`.
+
+It is designed to grow with the course: after important explanations, new cards can be added to `docs/cards.js` and immediately become available for review.
+
+The app supports lesson/module filters, card shuffling, local progress tracking, and **À revoir / Acquis** status.
+
+The `docs/` folder is also ready to be used as the source for GitHub Pages.
+
