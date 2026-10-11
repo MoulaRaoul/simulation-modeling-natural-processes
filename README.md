@@ -15,6 +15,21 @@ The main goals of this repository are to:
 - develop clean and reproducible Python simulations;
 - build a progressive portfolio in computational science.
 
+## First reproducible numerical experiment
+
+**[Experiment 01 — Logistic growth: Euler versus RK4](practicals/logistic_growth/README.md)**
+
+The first independent numerical study is now implemented in standard-library Python, with an analytical reference solution, a timestep-refinement experiment, eight unit tests, and a GitHub Actions verification workflow.
+
+Run from the repository root:
+
+```bash
+python practicals/logistic_growth/convergence.py
+python -m unittest discover -s practicals/logistic_growth -p "test_*.py" -v
+```
+
+The default parameters are illustrative rather than measured; numerical verification should not be confused with empirical model validation.
+
 ## Topics
 
 The study will progressively cover:
